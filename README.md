@@ -29,7 +29,7 @@ Future work ( I do not know when :) ):
 4. Run tests
 
 
-## Selenium - Install ubuntu 18.04
+## Selenium - Install on ubuntu 18.04
 
 1. Install Selenium
 
