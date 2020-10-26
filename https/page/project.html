@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Usage of HTTPS by Municipal Websites in Portugal</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+
+<body>
+ 
+ <header> <h1> Usage of HTTPS by Municipal Websites in Portugal </h1>
+  <img src="img/img02.png" width="15%" height="auto">
+  </header>
+
+  <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="test.html">SSL Server Test</a></li>
+        <li><a href="project.html" style="background-color: #076678;">HTTPS Best Practices</a></li>
+        <li><a href="changelog.html">Changelog</a></li>
+        <li style="float:right"><a href="contacts.html">Contacts</a></li>
+        </ul>
+  </nav>
+
+<br>
+
+<div class="card">
+    <b> SSL/TLS Best Practices </b>
+    <p> In 2018 we started this work because we wanted to understand how HTTPS was used for Municipal Websites in Portugal. The main goal is
+        offer a complete analysis of the atual state of the websites and make it possible for anyone to consult to see the current state.
+        The idea is to improve the current state because there are many problems.   </p>
+</div>
+
+<br>
+
+<div class="card">
+        <b> Private Key and Certificate </b>
+        <p> A strong private key is needed to prevent attackers from carrying out impersonation attacks and it is necessary to have a valid 
+            and strong certificate, which grants the private key the right to represent a particular hostname</p>
+</div>
+
+<br>
+
+<div class="card">
+        <b> Configuration </b>
+        <dl>
+                <dt> &#10140 Use Complete Certificate Chains</dt>
+                <dt> &#10140 Use Secure Protocols</dt>
+                <dd> &#10112 SSL v2 is insecure and must not be used</dd>
+                <dd> &#10113 SSL v3 is insecure when used with HTTP and obsolete.</dd>
+                <dd> &#10114 TLS v1.0 is also a legacy protocol that shouldn't be used, but it's typically still necessary in practice </dd>
+                <dd> &#10115 TLS v1.1 and v1.2 are both without known security issues </dd>
+                <dt> &#10140 Use Secure Cipher Suites</dt>
+                <dt> &#10140 Select Best Cipher Suites</dt>
+                <dt> &#10140 Use Forward Secrecy</dt>
+                <dt> &#10140 Use Strong Key Exchange</dt>
+                <dt> &#10140 Mitigate Known Problems</dt>
+            
+              </dl>
+</div>
+
+     
+  <br>
+
+
+  <footer>
+    <img src="img/logo.png" height="70px" align="left">
+  </footer>
+</body>
+
+
+</html>

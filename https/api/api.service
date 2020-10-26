@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve HTTPS page
+After=network.target
+
+[Service]
+User=calexandra
+Group=www-data
+WorkingDirectory=/home/calexandra/https/api/
+Environment="PATH=/home/calexandra/https/api/venv/bin"
+ExecStart=/home/calexandra/https/api/venv/bin/uwsgi --ini api.ini
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Check HTTPS municipality web pages
+After=network.target
+
+[Service]
+User=calexandra
+Group=calexandra
+WorkingDirectory=/home/calexandra/git/check-https-websites/evaluation
+Environment="PATH=/home/calexandra/git/check-https-websites/evaluation/venv/bin"
+ExecStart=/home/calexandra/git/check-https-websites/evaluation/venv/bin/python main.py
+
+[Install]
+WantedBy=multi-user.target

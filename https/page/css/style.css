@@ -1,0 +1,174 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+@font-face {
+    font-family: 'FiraGO';
+    font-style: normal;
+    font-weight: 500;
+    src: local('FiraGO'),
+         url('../fonts/FiraGO.woff2') format('woff2'),
+         url('../fonts/FiraGO.woff') format('woff');
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+   
+}
+
+ body {
+    font: 16px FiraGO, georgia, sans-serif;
+    color: #586e75;
+    margin: 0 10px 10px;
+    background-color: #f2f2f2;
+}
+  
+
+.logo-header {
+	background: linear-gradient(rgba(62, 63, 64, 0.6), rgba(62, 63, 64, 0.6)), url("../img/img07_v1.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	color: #fbf1c7;
+	font-family: FiraGO, Helvetica, Arial, sans-serif;
+	padding-top: 150px;
+	padding-bottom: 100px;
+}
+
+.logo-header h1 {
+	font-size: 3rem;
+	font-weight: 300;
+	margin: 0 auto 0.2em auto;
+}
+
+.logo-header p {
+	font-size: 1.15rem;
+	width: 80%;
+	margin: 0 auto 2em auto;
+}
+
+.logo-header .logo {
+	margin: 0 auto 1em auto;
+}
+
+.logo-header .btn {
+	padding: 10px 26px;
+	background-color: #313131;
+	color: #fbf1c7;
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-decoration: none;
+	border: solid 2px #313131;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+.logo-header .btn:hover {
+	color: #FFF;
+	background-color: #1f69ff;
+	border-color: #1f69ff;
+}
+
+@media (min-width: 992px) {
+	.logo-header {
+		height: 100vh;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.logo-header h1 {
+		font-size: 4rem;
+	}
+	.logo-header p {
+		width: 60%;
+	}
+}
+
+@media (max-width: 480px) {
+	.logo-header h1 {
+		font-size: 2.4rem;
+	}
+}
+
+
+.view {
+    background-color: #076678;
+    color: #ebdbb2;
+
+    /*background: url("../img/img06.jpg")no-repeat center center;
+    background-size: cover;*/
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: 0px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+
+header,
+.view {
+  height: 100%;
+}
+
+  
+select {
+    position: relative;
+    font: 24px FiraGO;
+}
+  
+.rounded {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+footer {
+    width: 100%;
+    position:absolute;
+    /*background:#076678;*/
+}
+
+@media screen and (max-width: 256px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+
+  .card {
+    background-color: #ebdbb2;
+
+  
+  }
+  
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    float: center;
+  }
+  
