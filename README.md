@@ -9,6 +9,11 @@ Future work ( I do not know when :) ):
 - Convert to django
 - Design and implement an interface to interact with the system.
 
+## Requirements
+
+- Python3
+
+
 ## Run
 
 1. Create a venv:
